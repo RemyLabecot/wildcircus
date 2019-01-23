@@ -3,16 +3,14 @@
 namespace App\Controller;
 
 use App\Entity\Circus;
-use App\Form\CircusType;
+use App\Form\Circus1Type;
 use App\Repository\CircusRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/circus")
- */
+
 class CircusController extends AbstractController
 {
     /**
@@ -63,7 +61,7 @@ class CircusController extends AbstractController
      */
     public function edit(Request $request, Circus $circus): Response
     {
-        $form = $this->createForm(CircusType::class, $circus);
+        $form = $this->createForm(Circus1Type::class, $circus);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

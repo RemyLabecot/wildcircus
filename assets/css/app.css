@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.circusText {
+    padding: 100px;
+    text-align: center;
+}
+
+.backImg {
+    background: url("../../public/img/bearWild.png") left no-repeat;
+    background-size: 400px;
+    width: 400px;
+    background-position-y: 0;
+}

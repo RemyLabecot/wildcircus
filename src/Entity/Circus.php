@@ -33,6 +33,11 @@ class Circus
         $this->visitors = new ArrayCollection();
     }
 
+    public function __toString()
+    {
+        return $this->history;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
